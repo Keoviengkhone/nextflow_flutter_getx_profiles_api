@@ -28,8 +28,8 @@ class HomePage extends StatelessWidget {
               itemCount: profiles.length,
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
-                  title: Text(profiles[index].name!),
-                  subtitle: Text(profiles[index].phone!),
+                  title: Text(profiles[index].name ?? "NOT FOUND"),
+                  subtitle: Text(profiles[index].phone ?? "NOT FOUND"),
                   onTap: () {
                     print(profiles[index].name);
                     print(profiles[index].phone);
