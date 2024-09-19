@@ -8,6 +8,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    controllerProfile.loadDataFromAPI();
     return Scaffold(
       appBar: AppBar(
         title: Center(

@@ -5,7 +5,7 @@ class ProfileController extends GetxController {
   void loadDataFromAPI() async {
     loading.value = true;
     await Future.delayed(
-      Duration(seconds: 5),
+      Duration(seconds: 3),
     );
     loading.value = false;
   }
